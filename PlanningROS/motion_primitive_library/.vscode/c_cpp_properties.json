@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zyh/catkin_ws/devel/include/**",
+        "/home/zyh/mavros_ws/devel/include/**",
+        "/home/zyh/rosworkspace/realsense_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/zyh/catkin_ws/src/mpl_ros/DecompROS/decomp_ros_utils/include/**",
+        "/home/zyh/catkin_ws/src/mpl_ros/DecompROS/DecompUtil/include/**",
+        "/home/zyh/mavros_ws/src/mavros/libmavconn/include/**",
+        "/home/zyh/mavros_ws/src/mavros/mavros/include/**",
+        "/home/zyh/mavros_ws/src/mavros/mavros_msgs/include/**",
+        "/home/zyh/catkin_ws/src/mpl_ros/motion_primitive_library/include/**",
+        "/home/zyh/catkin_ws/src/mpl_ros/mpl_external_planner/include/**",
+        "/home/zyh/catkin_ws/src/mpl_ros/planning_ros_utils/include/**",
+        "/home/zyh/rosworkspace/realsense_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/zyh/mavros_ws/src/mavros/test_mavros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

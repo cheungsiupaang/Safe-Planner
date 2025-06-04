@@ -1,0 +1,28 @@
+psi0: 0.0
+dpsi0: 0
+theta0: [0.6, -0.9]
+dtheta0: [0, 0]
+v0: [0, 0, 0]
+a0: [0, 0, 0]
+j0: [0, 0, 0]
+Ref: [[1, 0, 0],
+      [0, 1, 0],
+      [0, 0, 1]]
+
+v_max: [1.5, 1.5, 1.5]
+a_max: [1.2, 1.2, 1.2]
+dtheta_max: [0.1, 0.1]
+dpsi_max: 0.02
+theta_min: 0.57
+theta_max: 2.57
+theta1_min: 0.40
+theta1_max: 3.14
+theta2_min: -1.0
+theta2_max: 1.57
+arm_length: 0.345
+de: 0.5
+d0: 0.09
+d1: 0.23
+d2: 0.27
+lambda_de: 0.9
+gravity: 9.81

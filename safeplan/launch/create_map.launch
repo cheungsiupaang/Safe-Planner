@@ -1,0 +1,79 @@
+<launch>
+    <!-- the resolution of map could be 0.05 x n -->
+    <!-- box obstacle -->
+    <!-- exp1 -->
+    <param name="bag_name" value="output1.bag" />
+    <param name="theta1" value="0.0" />
+    <param name="x1_min" value="0.0" />
+    <param name="x1_max" value="0.6" />
+    <param name="y1_min" value="-1.2" />
+    <param name="y1_max" value="1.2" />
+    <param name="z1_min" value="-0.6" />
+    <param name="z1_max" value="1.2" />
+
+    <param name="theta2" value="0.0" />
+    <param name="x2_min" value="0.0" />
+    <param name="x2_max" value="0.0" />
+    <param name="y2_min" value="0.0" />
+    <param name="y2_max" value="0.0" />
+    <param name="z2_min" value="0.0" />
+    <param name="z2_max" value="0.0" />
+
+    <param name="theta3" value="0.0" />
+    <param name="x3_min" value="0.0" />
+    <param name="x3_max" value="0.0" />
+    <param name="y3_min" value="0.0" />
+    <param name="y3_max" value="0.0" />
+    <param name="z3_min" value="0.0" />
+    <param name="z3_max" value="0.0" />
+
+    <param name="theta4" value="0.0" />
+    <param name="x4_min" value="0.0" />
+    <param name="x4_max" value="0.0" />
+    <param name="y4_min" value="0.0" />
+    <param name="y4_max" value="0.0" />
+    <param name="z4_min" value="0.0" />
+    <param name="z4_max" value="0.0" />
+
+    <!-- exp2 -->
+    <param name="bag_name" value="output2.bag" />
+    <param name="theta1" value="0.3" />
+    <param name="x1_min" value="1.0" />
+    <param name="x1_max" value="2.2" />
+    <param name="y1_min" value="1.0" />
+    <param name="y1_max" value="1.6" />
+    <param name="z1_min" value="-0.6" />
+    <param name="z1_max" value="1.2" />
+
+    <param name="theta2" value="0.0" />
+    <param name="x2_min" value="0.4" />
+    <param name="x2_max" value="1.6" />
+    <param name="y2_min" value="-1.6" />
+    <param name="y2_max" value="-1.0" />
+    <param name="z2_min" value="-0.6" />
+    <param name="z2_max" value="1.2" />
+
+    <param name="theta3" value="0.0" />
+    <param name="x3_min" value="-2.2" />
+    <param name="x3_max" value="-1.6" />
+    <param name="y3_min" value="-0.8" />
+    <param name="y3_max" value="0.4" />
+    <param name="z3_min" value="-0.6" />
+    <param name="z3_max" value="1.2" />
+
+    <param name="theta4" value="0.0" />
+    <param name="x4_min" value="-0.3" />
+    <param name="x4_max" value="0.3" />
+    <param name="y4_min" value="-0.3" />
+    <param name="y4_max" value="0.3" />
+    <param name="z4_min" value="-0.6" />
+    <param name="z4_max" value="0.6" />
+
+    <param name="dilation" value="0.4" />
+
+    <include file="$(find safeplan)/launch/rviz.launch" >
+        <arg name="rviz_file" value="map.rviz" />
+    </include>
+
+    <node name="create_map" pkg="safeplan" type="create_map.py" output="screen"/>
+</launch>

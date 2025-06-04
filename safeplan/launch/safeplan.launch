@@ -1,0 +1,30 @@
+<launch>
+    <group ns="safeplan">
+        <node pkg="safeplan" type="safeplan.py" name="safeplan" output="screen">
+          <param name="radius" value="0.60"/>
+          <param name="T_lambda" value="5.0"/>
+          <param name="d4x_lambda" value="10.0"/>
+          <param name="ddpsi_lambda" value="10.0"/>
+          <param name="ddtheta_lambda" value="80.0"/>
+          <param name="xef_lambda" value="0.0"/>
+          <param name="avoid_method" value="convex"/>
+        </node>
+        <include file="$(find safeplan)/launch/rviz.launch">
+        </include>
+    </group>
+
+    <include file="$(find safeplan)/launch/path_decomp_jps.launch">
+        <arg name="use_rviz" value="false"/>
+
+        <arg name="bag_file" default="$(find safeplan)/data/output1.bag"/>
+        <arg name="start_x" value="-1.0"/>
+        <arg name="start_y" value="0.0"/>
+        <arg name="start_z" value="0.6"/>
+        <arg name="goal_x" value="1.6"/>
+        <arg name="goal_y" value="0.0"/>
+        <arg name="goal_z" value="1.2"/>
+
+        <arg name="inflate_radius" value="8"/>
+        <arg name="resolution" value="0.1"/>
+    </include>
+</launch>

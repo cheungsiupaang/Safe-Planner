@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>safeplan</name>
+  <version>0.0.1</version>
+  <description>The mpl_test_node package</description>
+  <maintainer email="zhangzp@mail.nankai.edu.cn">sikang</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>catkin_simple</build_depend>
+
+  <depend>rosbag</depend>
+  <depend>decomp_ros_msgs</depend>
+  <!-- <depend>decomp_ros_utils</depend> -->
+  <build_depend>planning_ros_msgs</build_depend>
+  <build_depend>decomp_ros_utils</build_depend>
+  <exec_depend>planning_ros_msgs</exec_depend>
+  <exec_depend>decomp_ros_utils</exec_depend>
+  <depend>message_generation</depend>
+  <depend>message_runtime</depend>
+</package>

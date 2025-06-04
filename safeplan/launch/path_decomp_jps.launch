@@ -1,0 +1,37 @@
+<launch>
+    <arg name="bag_file" default="$(find safeplan)/data/output2.bag"/>
+    <arg name="use_rviz" default="true"/>
+    <arg name="start_x" default="2.3"/>
+    <arg name="start_y" default="3.0"/>
+    <arg name="start_z" default="0.0"/>
+    <arg name="goal_x" default="-2.3"/>
+    <arg name="goal_y" default="-3.0"/>
+    <arg name="goal_z" default="1.0"/>
+
+    <arg name="resolution" default="0.1"/>
+    <arg name="inflate_radius" default="8"/>
+
+    <node name="path_decomp_jps" pkg="safeplan" type="path_decomp_jps" output="screen">
+        <param name="bag_file" value="$(arg bag_file)"/>
+        <param name="cloud_topic" value="/path_decomp_jps/cloud"/>
+        <param name="inflate_cloud_topic" value="/path_decomp_jps/inflate_cloud"/>
+        <param name="start_x" value="$(arg start_x)"/>
+        <param name="start_y" value="$(arg start_y)"/>
+        <param name="start_z" value="$(arg start_z)"/>
+        <param name="goal_x" value="$(arg goal_x)"/>
+        <param name="goal_y" value="$(arg goal_y)"/>
+        <param name="goal_z" value="$(arg goal_z)"/>
+        <param name="inflate_radius" value="$(arg inflate_radius)"/>
+        <param name="resolution" value="$(arg resolution)"/>
+        <param name="origin_x" value="-2.5"/>
+        <param name="origin_y" value="-3.5"/>
+        <param name="origin_z" value="-0.5"/>
+        <param name="range_x" value="2.5"/>
+        <param name="range_y" value="3.5"/>
+        <param name="range_z" value="3"/>
+    </node>
+
+    <include if="$(arg use_rviz)" file="$(find safeplan)/launch/rviz.launch" >
+        <arg name="rviz_file" value="map.rviz" />
+    </include>
+</launch>

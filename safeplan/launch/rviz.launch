@@ -1,0 +1,10 @@
+<launch>
+  <arg name="test" default="map_planner_node"/>
+  <arg name="rviz_file" default="test.rviz"/>
+
+  <node pkg="rviz"
+    type="rviz"
+    name="rviz"
+    output="screen"
+    args="-d $(find safeplan)/cfg/$(arg rviz_file)"/>
+</launch>

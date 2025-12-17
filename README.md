@@ -8,3 +8,8 @@ Z. Zhang, H. Yu, Y. Chai, Z. Yang, X. Liang*, Y. Fang, J. Han, "An End-Effector-
 
 ## Acknowledgements
 We sincerely appreciate the following open source projects: [JPS3d](https://github.com/KumarRobotics/jps3d), [DecompROS](https://github.com/sikang/DecompROS).
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=cheungsiupaang/Safe-Planner&type=date&legend=top-left)](https://www.star-history.com/#cheungsiupaang/Safe-Planner&type=date&legend=top-left)

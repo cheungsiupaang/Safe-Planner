@@ -1,6 +1,8 @@
+
+
 # Safe Planner
 
-This repo is a coupled motion planner for Aerial Manipulators in constrained environments considering the end-effector oriented. The main algorithm is located in the `safeplan/` directory.
+This repo is a coupled motion planner for Aerial Manipulators in constrained environments considering the end-effector orientation. The main algorithm is located in the `safeplan/` directory.
 
 **Related Paper: [Paper on IEEE](https://ieeexplore.ieee.org/document/10943237)**
 
